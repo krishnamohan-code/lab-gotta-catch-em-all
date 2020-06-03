@@ -1,6 +1,6 @@
 package model;
 
-
+import model.Pokemon;
 //PROGRESSION - 4
 //Go to JAVA Resouces - src/model and create a child class called Dragonite inside the model package with the following arguments
 //String characteristics 

@@ -11,6 +11,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import model.Bulbasaur;
 import model.Charizard;
+import model.Dragonite;
+import model.Mew;
+import model.Pikachu;
 
 @WebServlet(urlPatterns = { "/pokemon" })
 public class PokemonController extends HttpServlet {
@@ -41,8 +44,8 @@ public class PokemonController extends HttpServlet {
 			Bulbasaur   get= new Bulbasaur();
 			 
 			// Create the object for Bulbasaur class and use getters to retrieve the values	
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message1",);
+			msg = "<center>" + get.getPokemonName() + "  #" + get.getPokemonNumber();
+			request.setAttribute("message1",msg);
 			request.setAttribute("character1", get.getCharacteristics()); 
 			request.setAttribute("type1",get.getType());
 			request.setAttribute("evolution1", get.getEvolution());
@@ -53,8 +56,8 @@ public class PokemonController extends HttpServlet {
 			// Create the object for Charizard class and use getters to retrieve the values	
 			        Charizard   get = new Charizard();
 			  
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message2",);
+			msg = "<center>" + get.getPokemonName() + "  #" +get.getPokemonNumber() ;
+			request.setAttribute("message2",msg);
 			request.setAttribute("character2", get.getCharacteristics());
 			request.setAttribute("type2",get.getType());
 			request.setAttribute("evolution2", get.getEvolution());
@@ -64,11 +67,11 @@ public class PokemonController extends HttpServlet {
 		if (value3 != null) {
 
 			// Create the object for Dragonite class and use getters to retrieve the values	
-                                      Dragonite get =new Dragonite();
+                                      Dragonite  get =new Dragonite();
 			          
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message3",);
-			request.setAttribute("character3", get.getCharacteristics);
+			msg = "<center>" + get.getPokemonName()+ "  #" + get.getPokemonNumber();
+			request.setAttribute("message3",msg);
+			request.setAttribute("character3", get.getCharacteristics());
 			request.setAttribute("type3",get.getType());
 			request.setAttribute("evolution3", get.getEvolution());
 			request.setAttribute("baseExp3",get.getBaseExp());
@@ -76,26 +79,26 @@ public class PokemonController extends HttpServlet {
 		if (value4 != null) {
                                   Mew get =new Mew();
 			// Create the object for Mew class and use getters to retrieve the values	
-			/*	  
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message4",//getter);
-			request.setAttribute("character4", //getter);
-			request.setAttribute("type4",//getter;
-			request.setAttribute("evolution4", //getter);
-			request.setAttribute("baseExp4", //getter);*/
+	
+			msg = "<center>" + get.getPokemonName() + "  #" + get.getPokemonNumber();
+			request.setAttribute("message4",msg);
+			request.setAttribute("character4", get.getCharacteristics());
+			request.setAttribute("type4",get.getType());
+			request.setAttribute("evolution4", get.getEvolution());
+			request.setAttribute("baseExp4", get.getBaseExp());
 		}
 
 		if (value5 != null) {
 
 			// Create the object for Pikachu class and use getters to retrieve the values	
 /*getter*/
-			/*	  
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message5",//getter);
-			request.setAttribute("character5", //getter);
-			request.setAttribute("type5",//getter;
-			request.setAttribute("evolution5", //getter);
-			request.setAttribute("baseExp5", //getter);*/
+		                  Pikachu get = new Pikachu();
+			msg = "<center>" + get.getPokemonName()+ "  #" + get.getPokemonNumber();
+			request.setAttribute("message5",msg);
+			request.setAttribute("character5", get.getCharacteristics());
+			request.setAttribute("type5",get.getType());
+			request.setAttribute("evolution5", get.getEvolution());
+			request.setAttribute("baseExp5", get.getBaseExp());
 
 		}
 

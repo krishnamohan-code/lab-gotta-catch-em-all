@@ -1,6 +1,6 @@
 package model;
 
-
+import model.Pokemon;
 //PROGRESSION - 3
 //Go to JAVA Resouces - src/model and create a child class called Charizard inside the model package with the following arguments
 //String characteristics 

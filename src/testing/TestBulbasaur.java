@@ -1,5 +1,5 @@
 package testing;
-/*
+
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
@@ -56,11 +56,11 @@ public class TestBulbasaur {
 	
 	@Test
 	public void testBaseExpMethod() {
-		Bulbasaur bulbasaur = new Bulbasaur("bulbsaur",4,"Bulbasaur is a Grass/Poison-type Pokémon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokémon in the Kanto region.","POISON","IVYSAUR",64);
+		Bulbasaur bulbasaur = new Bulbasaur();
 		int temp = 64;
 		assertEquals(temp,bulbasaur.getBaseExp());		
 		try {
-			Bulbasaur p1 = new Bulbasaur(null,0,null,null,null,0);
+			Bulbasaur p1 = new Bulbasaur();
 			temp = 0;
 			p1.getBaseExp();
 		}
@@ -70,4 +70,4 @@ public class TestBulbasaur {
 	}
 }
 
-*/
+

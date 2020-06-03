@@ -1,5 +1,5 @@
 package model;
-
+import model.Pokemon;
 //PROGRESSION - 5
 //Go to JAVA Resouces - src/model and create a child class called Mew inside the model package with the following arguments
 //String characteristics 

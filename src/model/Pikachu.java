@@ -55,8 +55,6 @@ public class Pikachu extends Pokemon
 	public Pikachu()
 	{
 		super("Pikachu", 25);
-		 this.pokemonName= "Pikachu";
-  		this.pokemonNumber= 25;
   		this.characteristics="Pikachu is an Electric-type Pokémon, which was introduced in Generation I. Over the years, Pikachu has become so popular that it serves as the Pokémon franchise mascot.";
   		this.type="ELECTRIC";
   		this.evolution = "RAICHU";
