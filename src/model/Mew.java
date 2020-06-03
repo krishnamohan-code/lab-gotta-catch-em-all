@@ -18,3 +18,47 @@ package model;
 //type = "PSYCHIC"
 //evolution = "NONE"
 //baseExp = "64" 
+
+public class Mew extends Pokemon
+{      String characteristics, type,evolution,baseExp;
+	         public void setCharacteristics(String characteristics)
+	         {
+	        	    this.characteristics=characteristics;
+	         }
+	         public String getCharacteristics()
+	         {
+	        	 return characteristics;
+	         }
+	         public void setType(String type)
+	         {
+	        	 this.type=type;
+	         }
+	         public String getType()
+	         {
+	        	 return type;
+	         }
+	         public void setEvolution(String evolution)
+	         {
+	        	 this.evolution=evolution;
+	         }
+	         public String getEvolution()
+	         {
+	        	 return evolution;
+	         }
+	         public void setBaseExp(String baseExp)
+	         {
+	        	 this.baseExp=baseExp;
+	         }
+	         public String getBaseExp()
+	         {
+	        	 return baseExp;
+	         }
+	         public Mew()
+	         {
+	        	 super("Mew",151);
+	     		this.characteristics="Mew is a Psychic-type Mythical Pokémon introduced in Generation I. Mew is notable for its unique ability to learn every Technical Machine, Technical Record & Hidden Machine.";
+	     		this.type="PSYCHIC";
+	     		this.evolution = "NONE";
+	     		this.baseExp = "64";
+	         }
+	}
